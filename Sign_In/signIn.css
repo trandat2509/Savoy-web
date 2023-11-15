@@ -1,0 +1,122 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  background: url("https://images.wallpaperscraft.com/image/single/lake_forest_snow_130421_1280x720.jpg");
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.form-container {
+  width: 600px;
+  margin: 0 auto;
+  padding: 50px;
+  background-color: rgba(217, 217, 235, 0.6);
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  color: #fff;
+  border: 2px solid #efebeb;
+}
+
+h2.title_2 {
+  text-align: center;
+  margin-bottom: 40px;
+  font-size: 24px;
+  color: #282828;
+  font-weight: 500;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  margin-bottom: 5px;
+  font-size: 14px;
+  color: #282828;
+  font-weight: 500;
+}
+
+input {
+  padding: 12px;
+  border: none;
+  font-size: 14px;
+  color: #282828;
+  background-color: #ffffff;
+  border: 1px solid #686868;
+}
+
+button.button_login {
+  padding: 10px;
+  background-color: #282828;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  font-size: 18px;
+  transition: background-color 0.2s ease-in-out;
+  margin: 20px 0;
+}
+
+button:hover {
+  opacity: 0.85;
+}
+
+a.link {
+  text-decoration: none;
+  color: #282828;
+  font-size: 14px;
+  font-weight: 500;
+  transition: color 0.2s ease-in-out;
+}
+
+a.link:hover {
+  text-decoration: underline;
+  color: #f1eeee;
+}
+
+p {
+  text-align: center;
+  margin: 8px;
+  color: #282828;
+}
+.remember_forgot {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+  color: #282828;
+  font-weight: normal;
+  margin-top: 20px;
+}
+.remember_forgot label input {
+  margin-right: 5px;
+  accent-color: #282828;
+}
+.remember_forgot a {
+  text-decoration: none;
+  color: inherit;
+}
+.remember_forgot a:hover {
+  text-decoration: underline;
+  color: #f1eeee;
+}
+
+#signup-link,
+#login-link {
+  font-weight: 500;
+}
+
+#new-password,
+#username,
+#new-email {
+  margin-bottom: 20px;
+}

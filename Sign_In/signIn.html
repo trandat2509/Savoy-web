@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SAVOY</title>
+    <link rel="stylesheet" href="../Sign_In/signIn.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="shortcut icon"
+      href="../public/img/fcvicon2.png"
+      type="image/x-icon"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="form-container" id="login-form">
+        <h2 class="title_2">Sign In</h2>
+        <form>
+          <label for="username">Username or email address *</label>
+          <input type="text" id="username" name="username" required />
+          <label for="password">Password *</label>
+          <input type="password" id="password" name="password" required />
+          <div class="remember_forgot">
+            <label><input type="checkbox" />Remember me</label>
+            <a href="">Lost your password?</a>
+          </div>
+          <button type="submit" class="button_login">Sign In</button>
+        </form>
+        <p>
+          Don't have an account?
+          <a href="#" id="signup-link" class="link">Create an account</a>
+        </p>
+      </div>
+
+      <div class="form-container" id="signup-form" style="display: none">
+        <h2 class="title_2">Register</h2>
+        <form>
+          <label for="username">Username</label>
+          <input type="text" id="username" name="username" required />
+          <label for="new-email">Email address *</label>
+          <input type="email" id="new-email" name="new-email" required />
+          <label for="new-password">Password *</label>
+          <input
+            type="password"
+            id="new-password"
+            name="new-password"
+            required
+          />
+          <button type="submit" class="button_login">Register</button>
+        </form>
+        <p>
+          Already have an account?
+          <a href="#" id="login-link" class="link">Sign In</a>
+        </p>
+      </div>
+    </div>
+
+    <script src="../Sign_In/signIn.js"></script>
+  </body>
+</html>
