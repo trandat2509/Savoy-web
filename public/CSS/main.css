@@ -54,7 +54,7 @@ ul {
 li a {
   text-decoration: none;
 }
-a img {
+a.logo img {
   height: 16px;
   width: auto;
   margin-left: -70%;
@@ -145,6 +145,12 @@ a img {
   margin-top: 20px;
   background-color: #fbfbf9;
 } */
+
+/* Search box */
+.category_right li a .search-box {
+  margin-top: 20px;
+  /* width: 1300px; */
+}
 
 /* slide show */
 .slideShow {
