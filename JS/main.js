@@ -63,3 +63,16 @@ controls.addEventListener("mouseover", () => {
 controls.addEventListener("mouseout", () => {
   document.querySelector("#controls ul").classList.remove("tabsActive");
 });
+
+// cart
+
+$(document).ready(function () {
+  // Ẩn ban đầu phần carts
+  $(".carts").hide();
+
+  // Xử lý sự kiện khi nhấp vào liên kết "Cart"
+  $(".cart-action").click(function (e) {
+    e.preventDefault(); // Ngăn chặn hành động mặc định của liên kết
+    $(".carts").toggle(); // Hiển thị hoặc ẩn phần carts
+  });
+});

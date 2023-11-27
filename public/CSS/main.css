@@ -397,6 +397,10 @@ ul.products li {
   flex-basis: 25%;
   padding: 16px 12px;
   margin-bottom: 10px;
+  transition: color 0.3s ease-out
+}
+ul.products li:hover .product-info .product-loadMore {
+  display: block;
 }
 ul.products li img {
   max-width: 100%;
@@ -433,9 +437,13 @@ ul.products li .product-info a.product-name:hover {
 ul.products li .product-info .product-price {
   color: #282828;
   font-size: 14px;
+  position: relative;
 }
 ul.products li .product-info .product-loadMore {
   position: absolute;
+  top: 24px;
+  background-color: #fff;
+  display: none;
 }
 ul.products li .product-info div.product-loadMore a {
   color: #282828;
@@ -516,4 +524,77 @@ ul.products li .product-info div.product-loadMore a:hover {
 }
 .footer .footer_icon li a:hover {
   color: #aaa;
+}
+
+/* Cart */
+#menu_list_right li .cart-action {
+  position: relative;
+}
+.carts {
+  position: fixed;
+  height: 100vh;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 100vw;
+  background: rgba(241, 241, 241, 0.73);
+  z-index: 15;
+  display: none;
+}
+.cart {
+  background: #333333;
+  width: 30%;
+  height: 100%;
+  float: right;
+}
+.cart ul {
+  padding: 0;
+  margin: 0;
+}
+.cart ul li:first-child {
+  font-size: 16px;
+  padding: 30px 0px;
+  margin: 0 37px;
+  display: flex;
+  justify-content: right;
+  border-bottom: 1px solid #464646;
+}
+.cart ul li .close {
+  color: #eee;
+}
+.cart ul li:nth-child(2) {
+  display: grid;
+  justify-content: center;
+  padding: 35px 0 350px;
+}
+.cart ul li:nth-child(2) .no-product-cart {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 0 21px;
+}
+.cart ul li:nth-child(2) i {
+  font-size: 20px;
+  color: #eee;
+  background-color: #414141;
+  padding: 15px;
+  border-radius: 49%;
+}
+.cart ul li:nth-child(2) p {
+  font-size: 16px;
+  color: #eee;
+}
+.cart ul li:nth-child(3) {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 350px;
+  width: 100%;
+  margin: 0 auto;
+  border: 1px solid #5f5f5f;
+}
+.cart ul li:nth-child(3) a {
+  color: #eee;
+  font-size: 16px;
+  padding: 8px 0;
 }
