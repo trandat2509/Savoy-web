@@ -65,7 +65,6 @@ controls.addEventListener("mouseout", () => {
 });
 
 // cart
-
 $(document).ready(function () {
   // Ẩn ban đầu phần carts
   $(".carts").hide();

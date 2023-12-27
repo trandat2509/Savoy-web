@@ -127,6 +127,7 @@ a.logo img {
   color: #0a0a0a;
   transition: ease-in-out 0.2s;
 }
+
 /* Thiết lập hiệu ứng khi hover */
 /* #menu_list_left > li > a {
   position: relative;
@@ -141,8 +142,8 @@ a.logo img {
 }
 #menu_list_left > li:hover > a::before {
   display: block;
-} */
-/* .sub_menu_img {
+} 
+.sub_menu_img {
   display: flex;
 }
 #menu_list_left ul.sub_menu_img {
@@ -320,7 +321,6 @@ a.logo img {
   align-items: center;
 }
 .category .category_left li {
-  /* margin-right: 17px; */
   font-size: 14px;
   color: #ccc;
 }
@@ -359,6 +359,7 @@ a.logo img {
 .category_right li a.search {
   margin: 0 0 0 17px;
 }
+
 /* Search */
 .category_right li #search-box {
   font-size: 18px;
@@ -402,9 +403,8 @@ ul.products li {
   flex-basis: 25%;
   padding: 16px 12px;
   margin-bottom: 10px;
-  transition: color 0.3s ease-out;
+  transition: 0.3s ease-out;
 }
-
 ul.products li img {
   max-width: 100%;
   height: auto;
@@ -443,28 +443,51 @@ ul.products li .product-info .product-price {
   position: relative;
 }
 
+/* product thumb */
+.product-top .product-thumb {
+  position: relative;
+}
+.product-thumb img:nth-child(2) {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  top: -169px;
+  transition: 0.3s ease-in-out;
+}
+.product-thumb img:nth-child(2):hover {
+  opacity: 0;
+  cursor: pointer;
+}
+
 /* Show more */
+ul.products li .product-info {
+  position: relative;
+  transition: 0.3s ease-in-out;
+  overflow: hidden;
+}
+
 ul.products li .product-info .product-loadMore {
   position: absolute;
+  transition: 0.2s ease-in-out;
   top: 24px;
   left: -72px;
   background-color: #fff;
-  display: none;
+}
+ul.products li:hover .product-info .product-loadMore,
+.product-loadMore a {
+  top: 24px;
+  left: 0px;
 }
 ul.products li .product-info div.product-loadMore a {
   color: #282828;
+  margin-bottom: 10px;
+  border-bottom: 1px solid #cfcfcf;
   font-size: 14px;
   padding: 5px 0;
-  border-bottom: 1px solid #cfcfcf;
   transition: ease-in-out 0.2s;
 }
 ul.products li .product-info div.product-loadMore a:hover {
   color: #dc9814;
-}
-ul.products li:hover .product-info .product-loadMore {
-  display: block;
-  top: 24px;
-  left: 0px;
 }
 
 /* Load more */
