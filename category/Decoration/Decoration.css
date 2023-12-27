@@ -1,0 +1,9 @@
+.header {
+  border-bottom: 1px solid #cfcfcf;
+}
+.header_bottom.category_header {
+  margin-top: 70px;
+}
+.header_bottom .category_left li:nth-child(3) a {
+  color: #dc9814;
+}

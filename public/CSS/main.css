@@ -89,6 +89,7 @@ a.logo img {
   left: 0;
   color: #a2a0a0;
   font-size: 14px;
+  line-height: 10px;
   transition: ease-in-out 0.2s;
 }
 #menu_list_left ul.sub_menu li a:hover {
@@ -129,28 +130,6 @@ a.logo img {
 }
 
 /* Thiết lập hiệu ứng khi hover */
-/* #menu_list_left > li > a {
-  position: relative;
-}
-#menu_list_left > li > a::before {
-  content: "";
-  color: rgb(7, 7, 7);
-  position: absolute;
-  font-weight: 600;
-  display: none;
-  transition: cubic-bezier(0.075, 0.82, 0.165, 1);
-}
-#menu_list_left > li:hover > a::before {
-  display: block;
-} 
-.sub_menu_img {
-  display: flex;
-}
-#menu_list_left ul.sub_menu_img {
-  position: absolute;
-  margin-top: 20px;
-  background-color: #fbfbf9;
-} */
 
 /* slide show */
 .slideShow {

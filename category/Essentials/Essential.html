@@ -1,10 +1,11 @@
 <!DOCTYPE html>
-<html lang="vi">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Savoy - Minimalist AJAX WooCommerce</title>
-    <link rel="stylesheet" href="./public/CSS/main.css" />
+    <link rel="stylesheet" href="../Essentials/Essential.css" />
+    <link rel="stylesheet" href="/public/CSS/main.css" />
     <!-- <link rel="stylesheet" href="./public/CSS/reset.css" /> -->
     <link
       rel="stylesheet"
@@ -20,7 +21,7 @@
       integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
       crossorigin="anonymous"
     />
-    <link rel="shortcut icon" href="./public/img/favicon1.png" />
+    <link rel="shortcut icon" href="/public/img/favicon1.png" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -32,12 +33,11 @@
     <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
   </head>
   <body>
-    <!-- <div class="wrapper"> -->
     <header class="header">
       <nav id="menu" class="main_menu">
         <ul id="menu_list_left">
           <li class="sub_menu_list">
-            <a href=" ">Shop</a>
+            <a href="/index.html">Shop</a>
             <ul class="sub_menu">
               <li class="sub_menu_header">
                 <a href="#!">Shop Catalog</a>
@@ -160,16 +160,16 @@
                 <a href="">Categorys</a>
               </li>
               <li>
-                <a href="./category/Bags/Bags.html">Bags % Backpacks</a>
+                <a href="../Bags/Bags.html">Bags % Backpacks</a>
               </li>
               <li>
-                <a href="./category/Decoration/Decoration.html">Decoration</a>
+                <a href="../Decoration/Decoration.html">Decoration</a>
               </li>
               <li>
-                <a href="./category/Essentials/Essential.html">Essentials</a>
+                <a href="">Essentials</a>
               </li>
               <li>
-                <a href="./category/Interior/Interior.html">Interior</a>
+                <a href="../Interior/Interior.html">Interior</a>
               </li>
             </ul>
           </li>
@@ -324,7 +324,7 @@
         </ul>
 
         <a href="" class="logo"
-          ><img src="./public/img/logo@2x.png" alt=""
+          ><img src="../public/img/logo@2x.png" alt=""
         /></a>
 
         <ul id="menu_list_right">
@@ -334,7 +334,7 @@
             </a>
           </li>
           <li>
-            <a href="./Sign_In/signIn.html" class="btnLogin_popup">Sign In</a>
+            <a href="/Sign_In/signIn.html" class="btnLogin_popup">Sign In</a>
           </li>
           <li>
             <a href="" class="cart-action"
@@ -346,39 +346,7 @@
       </nav>
     </header>
 
-    <div class="slideShow">
-      <ul id="slider">
-        <li class="slide">
-          <img src="./public/img/slider-pendant-lighting.jpg" alt="" />
-          <h1 class="chose-1">Contemporary Pendant Lighting</h1>
-          <a href="">Interior</a>
-        </li>
-        <li class="slide">
-          <img src="./public/img/slider-wall-clock.jpg" alt="" />
-          <h1>Minimal Rotating Disc Wall Clock</h1>
-          <a href="">Decoration</a>
-        </li>
-        <li class="slide">
-          <h1>Bamboo Zigzag Pattern Basket</h1>
-          <a href="">Essentials</a>
-          <img src="./public/img/slider-basket.jpg" alt="" />
-        </li>
-
-        <li id="controls">
-          <ul>
-            <li class="tabs" id="prev">
-              <span><i class="fa-solid fa-chevron-left"></i></span>
-            </li>
-            <li class="tabs" id="next">
-              <span><i class="fa-solid fa-chevron-right"></i></span>
-            </li>
-          </ul>
-        </li>
-      </ul>
-      <ul id="marksList"></ul>
-    </div>
-
-    <div class="header_bottom">
+    <div class="header_bottom category_header">
       <div class="category">
         <ul class="category_left">
           <li>
@@ -429,8 +397,41 @@
           <div class="product-item">
             <div class="product-top">
               <a href="" class="product-thumb">
-                <img class="char-2" src="./public/img/char2.jpg" alt="anh2" />
-                <img class="char-1" src="./public/img/char1.jpg" alt="anh1" />
+                <img
+                  src="/public/img/product-specs-sunglasses-2.jpg"
+                  alt="anh1"
+                />
+                <img
+                  src="/public/img/product-specs-sunglasses.jpg"
+                  alt="anh1"
+                />
+              </a>
+            </div>
+            <div class="product-info">
+              <a href=""><i class="fa-regular fa-heart"></i></a>
+              <div>
+                <a href="" class="product-name">Modern Shell Chair</a>
+                <span class="product-price">$208.00</span>
+              </div>
+              <div class="product-loadMore">
+                <a href="">Show more</a>
+              </div>
+            </div>
+          </div>
+        </li>
+
+        <li>
+          <div class="product-item">
+            <div class="product-top">
+              <a href="" class="product-thumb">
+                <img
+                  src="/public/img/product-press-coffee-maker-2.jpg"
+                  alt="anh1"
+                />
+                <img
+                  src="/public/img/product-press-coffee-maker1.jpg"
+                  alt="anh1"
+                />
               </a>
             </div>
             <div class="product-info">
@@ -453,345 +454,13 @@
         <li>
           <div class="product-item">
             <div class="product-top">
-              <a
-                href="/public/product-details/product-1/product1.html"
-                class="product-thumb"
-              >
-                <img src="./public/img/den2.jpg" alt="anh2" />
-                <img src="./public/img/den1.jpg" alt="anh1" />
-              </a>
-            </div>
-            <div class="product-info">
-              <a href=""><i class="fa-regular fa-heart"></i></a>
-              <div>
-                <a
-                  href="/public/product-details/product-1/product1.html"
-                  class="product-name"
-                  >Modern Shell Chair</a
-                >
-                <span class="product-price">$208.00</span>
-              </div>
-              <div class="product-loadMore">
-                <a href="">Show more</a>
-              </div>
-            </div>
-          </div>
-        </li>
-        <li>
-          <div class="product-item">
-            <div class="product-top">
-              <a href="" class="product-thumb">
-                <img src="./public/img/long2.jpg" alt="anh2" />
-                <img src="./public/img/long1.jpg" alt="anh1" />
-              </a>
-            </div>
-            <div class="product-info">
-              <a href=""><i class="fa-regular fa-heart"></i></a>
-              <div>
-                <a href="" class="product-name">Modern Shell Chair</a>
-                <span class="product-price">$208.00</span>
-              </div>
-              <div class="product-loadMore">
-                <a href="">Show more</a>
-              </div>
-            </div>
-          </div>
-        </li>
-        <li>
-          <div class="product-item">
-            <div class="product-top">
-              <a href="" class="product-thumb">
-                <img src="./public/img/product-wall-clock.jpg" alt="anh1" />
-                <img src="./public/img/product-wall-clock-2.jpg" alt="anh2" />
-              </a>
-            </div>
-            <div class="product-info">
-              <a href=""><i class="fa-regular fa-heart"></i></a>
-              <div>
-                <a href="" class="product-name">Modern Shell Chair</a>
-                <span class="product-price">$208.00</span>
-              </div>
-              <div class="product-loadMore">
-                <a href="">Show more</a>
-              </div>
-            </div>
-          </div>
-        </li>
-        <li>
-          <div class="product-item">
-            <div class="product-top">
               <a href="" class="product-thumb">
                 <img
-                  src="./public/img/product-hans-backpack-2.jpg"
-                  alt="anh1"
-                />
-                <img src="./public/img/product-hans-backpack1.jpg" alt="anh1" />
-              </a>
-            </div>
-            <div class="product-info">
-              <a href=""><i class="fa-regular fa-heart"></i></a>
-              <div>
-                <a href="" class="product-name">Modern Shell Chair</a>
-                <span class="product-price">$208.00</span>
-              </div>
-              <div class="product-loadMore">
-                <a href="">Show more</a>
-              </div>
-            </div>
-          </div>
-        </li>
-        <li>
-          <div class="product-item">
-            <div class="product-top">
-              <a href="" class="product-thumb">
-                <img
-                  src="./public/img/product-specs-sunglasses-2.jpg"
-                  alt="anh2"
-                />
-                <img
-                  src="./public/img/product-specs-sunglasses.jpg"
-                  alt="anh1"
-                />
-              </a>
-            </div>
-            <div class="product-info">
-              <a href=""><i class="fa-regular fa-heart"></i></a>
-              <div>
-                <a href="" class="product-name">Modern Shell Chair</a>
-                <span class="product-price">$208.00</span>
-              </div>
-              <div class="product-loadMore">
-                <a href="">Show more</a>
-              </div>
-            </div>
-          </div>
-        </li>
-        <li>
-          <div class="product-item">
-            <div class="product-top">
-              <a href="" class="product-thumb">
-                <img
-                  src="./public/img/product-press-coffee-maker-2.jpg"
+                  src="/public/img/product-plain-glassbottle-2.jpg"
                   alt="anh1"
                 />
                 <img
-                  src="./public/img/product-press-coffee-maker1.jpg"
-                  alt="anh1"
-                />
-              </a>
-            </div>
-            <div class="product-info">
-              <a href=""><i class="fa-regular fa-heart"></i></a>
-              <div>
-                <a href="" class="product-name">Modern Shell Chair</a>
-                <span class="product-price">$208.00</span>
-              </div>
-              <div class="product-loadMore">
-                <a href="">Show more</a>
-              </div>
-            </div>
-          </div>
-        </li>
-        <li>
-          <div class="product-item">
-            <div class="product-top">
-              <a href="" class="product-thumb">
-                <img src="./public/img/product-door-stop.jpg" alt="anh1" />
-                <img src="./public/img/product-door-bumper.jpg" alt="anh1" />
-              </a>
-            </div>
-            <div class="product-info">
-              <a href=""><i class="fa-regular fa-heart"></i></a>
-              <div>
-                <a href="" class="product-name">Modern Shell Chair</a>
-                <span class="product-price">$208.00</span>
-              </div>
-              <div class="product-loadMore">
-                <a href="">Show more</a>
-              </div>
-            </div>
-          </div>
-        </li>
-        <li>
-          <div class="product-item">
-            <div class="product-top">
-              <a href="" class="product-thumb">
-                <img src="./public/img/product-laptop-bag-2.jpg" alt="anh1" />
-                <img src="./public/img/product-laptop-bag.jpg" alt="anh1" />
-              </a>
-            </div>
-            <div class="product-info">
-              <a href=""><i class="fa-regular fa-heart"></i></a>
-              <div>
-                <a href="" class="product-name">Modern Shell Chair</a>
-                <span class="product-price">$208.00</span>
-              </div>
-              <div class="product-loadMore">
-                <a href="">Show more</a>
-              </div>
-            </div>
-          </div>
-        </li>
-        <li>
-          <div class="product-item">
-            <div class="product-top">
-              <a href="" class="product-thumb">
-                <img
-                  src="./public/img/product-plain-glassbottle-2.jpg"
-                  alt="anh1"
-                />
-                <img
-                  src="./public/img/product-plain-glassbottle.jpg"
-                  alt="anh1"
-                />
-              </a>
-            </div>
-            <div class="product-info">
-              <a href=""><i class="fa-regular fa-heart"></i></a>
-              <div>
-                <a href="" class="product-name">Modern Shell Chair</a>
-                <span class="product-price">$208.00</span>
-              </div>
-              <div class="product-loadMore">
-                <a href="">Show more</a>
-              </div>
-            </div>
-          </div>
-        </li>
-        <li>
-          <div class="product-item">
-            <div class="product-top">
-              <a href="" class="product-thumb">
-                <img
-                  src="./public/img/product-ceramic-tealight-holder-2.jpg"
-                  alt="anh1"
-                />
-                <img
-                  src="./public/img/product-ceramic-tealight-holder.jpg"
-                  alt="anh1"
-                />
-              </a>
-            </div>
-            <div class="product-info">
-              <a href=""><i class="fa-regular fa-heart"></i></a>
-              <div>
-                <a href="" class="product-name">Modern Shell Chair</a>
-                <span class="product-price">$208.00</span>
-              </div>
-              <div class="product-loadMore">
-                <a href="">Show more</a>
-              </div>
-            </div>
-          </div>
-        </li>
-        <li>
-          <div class="product-item">
-            <div class="product-top">
-              <a href="" class="product-thumb">
-                <img
-                  src="./public/img/product-canvas-basket-2.jpg"
-                  alt="anh1"
-                />
-                <img src="./public/img/product-canvas-basket.jpg" alt="anh1" />
-              </a>
-            </div>
-            <div class="product-info">
-              <a href=""><i class="fa-regular fa-heart"></i></a>
-              <div>
-                <a href="" class="product-name">Modern Shell Chair</a>
-                <span class="product-price">$208.00</span>
-              </div>
-              <div class="product-loadMore">
-                <a href="">Show more</a>
-              </div>
-            </div>
-          </div>
-        </li>
-        <li>
-          <div class="product-item">
-            <div class="product-top">
-              <a href="" class="product-thumb">
-                <img
-                  src="./public/img/product-amber-body-lotion-2.jpg"
-                  alt="anh1"
-                />
-                <img
-                  src="./public/img/product-amber-body-lotion.jpg"
-                  alt="anh1"
-                />
-              </a>
-            </div>
-            <div class="product-info">
-              <a href=""><i class="fa-regular fa-heart"></i></a>
-              <div>
-                <a href="" class="product-name">Modern Shell Chair</a>
-                <span class="product-price">$208.00</span>
-              </div>
-              <div class="product-loadMore">
-                <a href="">Show more</a>
-              </div>
-            </div>
-          </div>
-        </li>
-        <li>
-          <div class="product-item">
-            <div class="product-top">
-              <a href="" class="product-thumb">
-                <img
-                  src="./public/img/product-havana-sunglasses-2.jpg"
-                  alt="anh1"
-                />
-                <img
-                  src="./public/img/product-havana-sunglasses.jpg"
-                  alt="anh1"
-                />
-              </a>
-            </div>
-            <div class="product-info">
-              <a href=""><i class="fa-regular fa-heart"></i></a>
-              <div>
-                <a href="" class="product-name">Modern Shell Chair</a>
-                <span class="product-price">$208.00</span>
-              </div>
-              <div class="product-loadMore">
-                <a href="">Show more</a>
-              </div>
-            </div>
-          </div>
-        </li>
-        <li>
-          <div class="product-item">
-            <div class="product-top">
-              <a href="" class="product-thumb">
-                <img
-                  src="./public/img/product-henry-backpack-2.jpg"
-                  alt="anh1"
-                />
-                <img src="./public/img/product-henry-backpack.jpg" alt="anh1" />
-              </a>
-            </div>
-            <div class="product-info">
-              <a href=""><i class="fa-regular fa-heart"></i></a>
-              <div>
-                <a href="" class="product-name">Modern Shell Chair</a>
-                <span class="product-price">$208.00</span>
-              </div>
-              <div class="product-loadMore">
-                <a href="">Show more</a>
-              </div>
-            </div>
-          </div>
-        </li>
-        <li>
-          <div class="product-item">
-            <div class="product-top">
-              <a href="" class="product-thumb">
-                <img
-                  src="./public/img/product-striped-canvas-bag-2.jpg"
-                  alt="anh1"
-                />
-                <img
-                  src="./public/img/product-striped-canvas-bag.jpg"
+                  src="/public/img/product-plain-glassbottle.jpg"
                   alt="anh1"
                 />
               </a>
@@ -814,11 +483,11 @@
             <div class="product-top">
               <a href="" class="product-thumb">
                 <img
-                  src="./public/img/product-jersey-backpack-2.jpg"
+                  src="/public/img/product-amber-body-lotion-2.jpg"
                   alt="anh1"
                 />
                 <img
-                  src="./public/img/product-jersey-backpack.jpg"
+                  src="/public/img/product-amber-body-lotion.jpg"
                   alt="anh1"
                 />
               </a>
@@ -841,11 +510,11 @@
             <div class="product-top">
               <a href="" class="product-thumb">
                 <img
-                  src="./public/img/product-round-tray-table-2.jpg"
+                  src="/public/img/product-havana-sunglasses-2.jpg"
                   alt="anh1"
                 />
                 <img
-                  src="./public/img/product-round-tray-table.jpg"
+                  src="/public/img/product-havana-sunglasses.jpg"
                   alt="anh1"
                 />
               </a>
@@ -867,11 +536,8 @@
           <div class="product-item">
             <div class="product-top">
               <a href="" class="product-thumb">
-                <img
-                  src="./public/img/product-ceramic-watch-2.jpg"
-                  alt="anh1"
-                />
-                <img src="./public/img/product-ceramic-watch.jpg" alt="anh1" />
+                <img src="/public/img/product-ceramic-watch-2.jpg" alt="anh1" />
+                <img src="/public/img/product-ceramic-watch.jpg" alt="anh1" />
               </a>
             </div>
             <div class="product-info">
@@ -891,14 +557,29 @@
           <div class="product-item">
             <div class="product-top">
               <a href="" class="product-thumb">
-                <img
-                  src="./public/img/product-floral-scented-sachet-2.jpg"
-                  alt="anh1"
-                />
-                <img
-                  src="./public/img/product-floral-scented-sachet.jpg"
-                  alt="anh1"
-                />
+                <img src="/public/img/product-thermo-flask-2.jpg" alt="anh1" />
+                <img src="/public/img/product-thermo-flask.jpg" alt="anh1" />
+              </a>
+            </div>
+            <div class="product-info">
+              <a href=""><i class="fa-regular fa-heart"></i></a>
+              <div>
+                <a href="" class="product-name">Modern Shell Chair</a>
+                <span class="product-price">$208.00</span>
+              </div>
+              <div class="product-loadMore">
+                <a href="">Show more</a>
+              </div>
+            </div>
+          </div>
+        </li>
+
+        <li>
+          <div class="product-item">
+            <div class="product-top">
+              <a href="" class="product-thumb">
+                <img src="/public/img/product-glass-pitcher-2.jpg" alt="anh1" />
+                <img src="/public/img/product-glass-pitcher.jpg" alt="anh1" />
               </a>
             </div>
             <div class="product-info">
@@ -914,11 +595,6 @@
           </div>
         </li>
       </ul>
-    </div>
-
-    <!-- load more -->
-    <div class="load-more">
-      <a href="">Load More</a>
     </div>
 
     <footer class="footer">
@@ -976,7 +652,5 @@
         </ul>
       </div>
     </div>
-
-    <script src="./JS/main.js"></script>
   </body>
 </html>
