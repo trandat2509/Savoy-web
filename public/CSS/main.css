@@ -109,6 +109,7 @@ a.logo img {
 }
 .sub_label {
   vertical-align: super;
+  padding: 0 3px;
   font-size: 10px;
   background-color: #fbfbf9;
   border-radius: 3px;
@@ -128,8 +129,6 @@ a.logo img {
   color: #0a0a0a;
   transition: ease-in-out 0.2s;
 }
-
-/* Thiết lập hiệu ứng khi hover */
 
 /* slide show */
 .slideShow {
