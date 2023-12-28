@@ -24,6 +24,9 @@ body {
   border-radius: 2px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
   backdrop-filter: blur(10px);
+  background-color: rgba(217, 217, 235, 0.6);
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
   color: #fff;
   border: 2px solid #efebeb;
 }

@@ -4,6 +4,991 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Savoy - Minimalist AJAX WooCommerce</title>
+    <link rel="stylesheet" href="/public/CSS/main.css" />
+    <!-- <link rel="stylesheet" href="./public/CSS/reset.css" /> -->
+    <link
+      rel="stylesheet"
+      href="/public/product-details/product-1/product1.html"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link rel="shortcut icon" href="./public/img/favicon1.png" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./search-box/search.css" />
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+  </head>
+  <body>
+    <!-- <div class="wrapper"> -->
+    <header class="header">
+      <nav id="menu" class="main_menu">
+        <ul id="menu_list_left">
+          <li class="sub_menu_list">
+            <a href=" ">Shop</a>
+            <ul class="sub_menu">
+              <li class="sub_menu_header">
+                <a href="#!">Shop Catalog</a>
+              </li>
+              <li>
+                <a href="#!">Shop - Category Grid</a>
+              </li>
+              <li>
+                <a href="#!">Shop- Fullscreen</a>
+              </li>
+              <li>
+                <a href="#!"
+                  >Shop- Header Search <span class="sub_label">NEW</span></a
+                >
+              </li>
+              <li>
+                <a href="#!">Shop - List</a>
+              </li>
+              <li>
+                <a href="#!">Shop - Masonry Grid</a>
+              </li>
+              <li>
+                <a href="#!"
+                  >Shop - Menu Thumbnails <span class="sub_label">NEW</span></a
+                >
+              </li>
+              <li>
+                <a href="#!">Shop - Overlay</a>
+              </li>
+              <li>
+                <a href="#!">Shop - Pagination</a>
+              </li>
+              <li>
+                <a href="#!">Shop - Popup Filters</a>
+              </li>
+              <li>
+                <a href="#!">Shop - Sidebar</a>
+              </li>
+              <li class="sub_menu_footer">
+                <a href="#!"> Product Types </a>
+              </li>
+              <li>
+                <a href="#!">Simple</a>
+              </li>
+              <li>
+                <a href="#!">Variable</a>
+              </li>
+              <li>
+                <a href="#!">Grouped</a>
+              </li>
+              <li>
+                <a href="#!">External / Affiliate</a>
+              </li>
+              <li>
+                <a href="#!">Out of Stock</a>
+              </li>
+            </ul>
+            <ul class="sub_menu">
+              <li class="sub_menu_header">
+                <a href="#!"> Product Layouts </a>
+              </li>
+              <li>
+                <a href="#!">No Background</a>
+              </li>
+              <li>
+                <a href="#!"
+                  >Swatches & Labels <span class="sub_label">NEW</span></a
+                >
+              </li>
+              <li>
+                <a href="#!">Extended Description</a>
+              </li>
+              <li>
+                <a href="#!">Gallery - Grid</a>
+              </li>
+              <li>
+                <a href="#!"
+                  >Gallery - Expanded <span class="sub_label">NEW</span></a
+                >
+              </li>
+              <li>
+                <a href="#!">Gallery - Horizontal</a>
+              </li>
+              <li>
+                <a href="#!">Gallery - Scrolling</a>
+              </li>
+              <li>
+                <a href="#!">Gallery - Scattered</a>
+              </li>
+              <li>
+                <a href="#!">Feature Video</a>
+              </li>
+              <li>
+                <a href="#!">Image Zoom</a>
+              </li>
+              <li class="sub_menu_footer">
+                <a href="#!"> Shop Pages </a>
+              </li>
+              <li>
+                <a href="#!">Cart</a>
+              </li>
+              <li>
+                <a href="#!">Checkout</a>
+              </li>
+              <li>
+                <a href="#!">Order Tracking</a>
+              </li>
+              <li>
+                <a href="#!">My Acount</a>
+              </li>
+              <li>
+                <a href="#!">Wishlist</a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a href="">Category <span class="label">NEW</span></a>
+            <ul class="sub_menu">
+              <li class="sub_menu_header">
+                <a href="">Categorys</a>
+              </li>
+              <li>
+                <a href="./category/Bags/Bags.html">Bags % Backpacks</a>
+              </li>
+              <li>
+                <a href="./category/Decoration/Decoration.html">Decoration</a>
+              </li>
+              <li>
+                <a href="./category/Essentials/Essential.html">Essentials</a>
+              </li>
+              <li>
+                <a href="./category/Interior/Interior.html">Interior</a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a href="">Pages</a>
+            <ul class="sub_menu">
+              <li>
+                <a href="#!">About Us</a>
+              </li>
+              <li>
+                <a href="#!">Blog</a>
+              </li>
+              <li>
+                <a href="#!">Blog - Classic + Sidebar</a>
+              </li>
+              <li>
+                <a href="#!">Blog - List</a>
+              </li>
+              <li>
+                <a href="#!"
+                  >Blog - Infinite Load <span class="sub_label">NEW</span></a
+                >
+              </li>
+              <li>
+                <a href="#!">Blog - Single Post</a>
+              </li>
+              <li>
+                <a href="#!">Contact</a>
+              </li>
+              <li>
+                <a href="#!">Contact - Form</a>
+              </li>
+              <li>
+                <a href="#!">FAQ</a>
+              </li>
+              <li>
+                <a href="#!">Portfolio</a>
+              </li>
+              <li>
+                <a href="#!">Portfolio - Single</a>
+              </li>
+              <li>
+                <a href="#!">404</a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a href="">Element</a>
+            <ul class="sub_menu">
+              <li class="sub_menu_header">
+                <a href="#!">Headers</a>
+              </li>
+              <li>
+                <a href="#!"
+                  >Header - Icons <span class="sub_label">NEW</span></a
+                >
+              </li>
+              <li>
+                <a href="#!"
+                  >Header - Instant Search <span class="sub_label">NEW</span></a
+                >
+              </li>
+              <li>
+                <a href="#!">Header - Menu Centered</a>
+              </li>
+              <li>
+                <a href="#!">Header - Split 70/30</a>
+              </li>
+              <li>
+                <a href="#!">Header - Stacked</a>
+              </li>
+              <li>
+                <a href="#!">Header - Stacked Centered</a>
+              </li>
+              <li>
+                <a href="#!">Header - Top Bar</a>
+              </li>
+              <li>
+                <a href="#!">Header - Transparent Full</a>
+              </li>
+              <li>
+                <a href="#!">Header - Transparent</a>
+              </li>
+            </ul>
+            <ul class="sub_menu">
+              <li class="sub_menu_header">
+                <a href="#!">Pages Element</a>
+              </li>
+              <li>
+                <a href="#!">Accordions</a>
+              </li>
+              <li>
+                <a href="#!">Banner</a>
+              </li>
+              <li>
+                <a href="#!">Banner Slider</a>
+              </li>
+              <li>
+                <a href="#!">Buttons</a>
+              </li>
+              <li>
+                <a href="#!">Chart & Progress Bars</a>
+              </li>
+              <li>
+                <a href="#!">Feature Boxes</a>
+              </li>
+              <li>
+                <a href="#!">Google Maps</a>
+              </li>
+              <li>
+                <a href="#!">Lightboxes</a>
+              </li>
+              <li>
+                <a href="#!">Posts</a>
+              </li>
+            </ul>
+            <ul class="sub_menu sub_menu_final">
+              <li class="sub_menu_header">
+                <a href="#!"></a>
+              </li>
+              <li>
+                <a href="#!">Headings & Separator</a>
+              </li>
+              <li>
+                <a href="#!">Instagram Gallery</a>
+              </li>
+              <li>
+                <a href="#!">Products</a>
+              </li>
+              <li>
+                <a href="#!"
+                  >Product Reviews <span class="sub_label">NEW</span></a
+                >
+              </li>
+              <li>
+                <a href="#!">Product Categories</a>
+              </li>
+              <li>
+                <a href="#!">Tabs & Toggles</a>
+              </li>
+              <li>
+                <a href="#!">Team</a>
+              </li>
+              <li>
+                <a href="#!">Testimonials</a>
+              </li>
+              <li>
+                <a href="#!">Video Players</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+
+        <a href="" class="logo"
+          ><img src="./public/img/logo@2x.png" alt=""
+        /></a>
+
+        <ul id="menu_list_right">
+          <li>
+            <a href="">
+              <i class="fa-regular fa-heart"></i>
+            </a>
+          </li>
+          <li>
+            <a href="/Sign_In/signIn.html" class="btnLogin_popup">Sign In</a>
+          </li>
+          <li>
+            <a href="" class="cart-action"
+              >Cart <span class="cart-quantity">0</span></a
+            >
+            <!-- <span class="quantity">0</span> -->
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <div class="slideShow">
+      <ul id="slider">
+        <li class="slide">
+          <img src="./public/img//slider-pendant-lighting.jpg" alt="" />
+          <h1 class="chose-1">Contemporary Pendant Lighting</h1>
+          <a href="">Interior</a>
+        </li>
+        <li class="slide">
+          <img src="./public/img/slider-wall-clock.jpg" alt="" />
+          <h1>Minimal Rotating Disc Wall Clock</h1>
+          <a href="">Decoration</a>
+        </li>
+        <li class="slide">
+          <h1>Bamboo Zigzag Pattern Basket</h1>
+          <a href="">Essentials</a>
+          <img src="./public/img/slider-basket.jpg" alt="" />
+        </li>
+
+        <li id="controls">
+          <ul>
+            <li class="tabs" id="prev">
+              <span><i class="fa-solid fa-chevron-left"></i></span>
+            </li>
+            <li class="tabs" id="next">
+              <span><i class="fa-solid fa-chevron-right"></i></span>
+            </li>
+          </ul>
+        </li>
+      </ul>
+      <ul id="marksList"></ul>
+    </div>
+
+    <div class="header_bottom">
+      <div class="category">
+        <ul class="category_left">
+          <li>
+            <a href="" class="category_left_first">All</a>
+          </li>
+          <li>
+            <span>/</span>
+            <a href="./category/Bags/Bags.html">Bags & Backpacks</a>
+          </li>
+          <li>
+            <span>/</span>
+            <a href="./category/Decoration/Decoration.html">Decoration</a>
+          </li>
+          <li>
+            <span>/</span>
+            <a href="./category/Essentials/Essential.html">Essentials</a>
+          </li>
+          <li>
+            <span>/</span>
+            <a
+              href="./category/Interior/Interior.html"
+              class="category_left_final"
+              >Interior</a
+            >
+          </li>
+        </ul>
+        <ul class="category_right">
+          <li>
+            <a href="">Filter</a>
+          </li>
+          <span>/</span>
+          <li>
+            <form id="search-box" action="">
+              <input
+                type="text"
+                class="search-text"
+                placeholder="Search products"
+              />
+              Search
+              <button id="search-btn">
+                <i class="fa-solid fa-magnifying-glass"></i>
+              </button>
+            </form>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="content_card">
+      <ul class="products">
+        <li>
+          <div class="product-item">
+            <div class="product-top">
+              <a href="" class="product-thumb">
+                <img class="char-2" src="./public/img/char2.jpg" alt="anh2" />
+                <img class="char-1" src="./public/img/char1.jpg" alt="anh1" />
+              </a>
+            </div>
+            <div class="product-info">
+              <a href=""><i class="fa-regular fa-heart"></i></a>
+              <div>
+                <a
+                  href="./public/product-details/product-1/product1.html"
+                  class="product-name"
+                  >Modern Shell Chair</a
+                >
+                <span class="product-price">$208.00</span>
+              </div>
+              <div class="product-loadMore">
+                <a href="">Show more</a>
+              </div>
+            </div>
+          </div>
+        </li>
+
+        <li>
+          <div class="product-item">
+            <div class="product-top">
+              <a href="" class="product-thumb">
+                <img src="./public/img/den2.jpg" alt="anh2" />
+                <img src="./public/img/den1.jpg" alt="anh1" />
+              </a>
+            </div>
+            <div class="product-info">
+              <a href=""><i class="fa-regular fa-heart"></i></a>
+              <div>
+                <a
+                  href="./public/product-details/product-1/product1.html"
+                  class="product-name"
+                  >Modern Shell Chair</a
+                >
+                <span class="product-price">$208.00</span>
+              </div>
+              <div class="product-loadMore">
+                <a href="">Show more</a>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="product-item">
+            <div class="product-top">
+              <a href="" class="product-thumb">
+                <img src="./public/img/long2.jpg" alt="anh2" />
+                <img src="./public/img/long1.jpg" alt="anh1" />
+              </a>
+            </div>
+            <div class="product-info">
+              <a href=""><i class="fa-regular fa-heart"></i></a>
+              <div>
+                <a href="" class="product-name">Modern Shell Chair</a>
+                <span class="product-price">$208.00</span>
+              </div>
+              <div class="product-loadMore">
+                <a href="">Show more</a>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="product-item">
+            <div class="product-top">
+              <a href="" class="product-thumb">
+                <img src="./public/img/product-wall-clock.jpg" alt="anh1" />
+                <img src="./public/img/product-wall-clock-2.jpg" alt="anh2" />
+              </a>
+            </div>
+            <div class="product-info">
+              <a href=""><i class="fa-regular fa-heart"></i></a>
+              <div>
+                <a href="" class="product-name">Modern Shell Chair</a>
+                <span class="product-price">$208.00</span>
+              </div>
+              <div class="product-loadMore">
+                <a href="">Show more</a>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="product-item">
+            <div class="product-top">
+              <a href="" class="product-thumb">
+                <img
+                  src="./public/img/product-hans-backpack-2.jpg"
+                  alt="anh1"
+                />
+                <img src="./public/img/product-hans-backpack1.jpg" alt="anh1" />
+              </a>
+            </div>
+            <div class="product-info">
+              <a href=""><i class="fa-regular fa-heart"></i></a>
+              <div>
+                <a href="" class="product-name">Modern Shell Chair</a>
+                <span class="product-price">$208.00</span>
+              </div>
+              <div class="product-loadMore">
+                <a href="">Show more</a>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="product-item">
+            <div class="product-top">
+              <a href="" class="product-thumb">
+                <img
+                  src="./public/img/product-specs-sunglasses-2.jpg"
+                  alt="anh2"
+                />
+                <img
+                  src="./public/img/product-specs-sunglasses.jpg"
+                  alt="anh1"
+                />
+              </a>
+            </div>
+            <div class="product-info">
+              <a href=""><i class="fa-regular fa-heart"></i></a>
+              <div>
+                <a href="" class="product-name">Modern Shell Chair</a>
+                <span class="product-price">$208.00</span>
+              </div>
+              <div class="product-loadMore">
+                <a href="">Show more</a>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="product-item">
+            <div class="product-top">
+              <a href="" class="product-thumb">
+                <img
+                  src="./public/img/product-press-coffee-maker-2.jpg"
+                  alt="anh1"
+                />
+                <img
+                  src="./public/img/product-press-coffee-maker1.jpg"
+                  alt="anh1"
+                />
+              </a>
+            </div>
+            <div class="product-info">
+              <a href=""><i class="fa-regular fa-heart"></i></a>
+              <div>
+                <a href="" class="product-name">Modern Shell Chair</a>
+                <span class="product-price">$208.00</span>
+              </div>
+              <div class="product-loadMore">
+                <a href="">Show more</a>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="product-item">
+            <div class="product-top">
+              <a href="" class="product-thumb">
+                <img src="./public/img/product-door-stop.jpg" alt="anh1" />
+                <img src="./public/img/product-door-bumper.jpg" alt="anh1" />
+              </a>
+            </div>
+            <div class="product-info">
+              <a href=""><i class="fa-regular fa-heart"></i></a>
+              <div>
+                <a href="" class="product-name">Modern Shell Chair</a>
+                <span class="product-price">$208.00</span>
+              </div>
+              <div class="product-loadMore">
+                <a href="">Show more</a>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="product-item">
+            <div class="product-top">
+              <a href="" class="product-thumb">
+                <img src="./public/img/product-laptop-bag-2.jpg" alt="anh1" />
+                <img src="./public/img/product-laptop-bag.jpg" alt="anh1" />
+              </a>
+            </div>
+            <div class="product-info">
+              <a href=""><i class="fa-regular fa-heart"></i></a>
+              <div>
+                <a href="" class="product-name">Modern Shell Chair</a>
+                <span class="product-price">$208.00</span>
+              </div>
+              <div class="product-loadMore">
+                <a href="">Show more</a>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="product-item">
+            <div class="product-top">
+              <a href="" class="product-thumb">
+                <img
+                  src="./public/img/product-plain-glassbottle-2.jpg"
+                  alt="anh1"
+                />
+                <img
+                  src="./public/img/product-plain-glassbottle.jpg"
+                  alt="anh1"
+                />
+              </a>
+            </div>
+            <div class="product-info">
+              <a href=""><i class="fa-regular fa-heart"></i></a>
+              <div>
+                <a href="" class="product-name">Modern Shell Chair</a>
+                <span class="product-price">$208.00</span>
+              </div>
+              <div class="product-loadMore">
+                <a href="">Show more</a>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="product-item">
+            <div class="product-top">
+              <a href="" class="product-thumb">
+                <img
+                  src="./public/img/product-ceramic-tealight-holder-2.jpg"
+                  alt="anh1"
+                />
+                <img
+                  src="./public/img/product-ceramic-tealight-holder.jpg"
+                  alt="anh1"
+                />
+              </a>
+            </div>
+            <div class="product-info">
+              <a href=""><i class="fa-regular fa-heart"></i></a>
+              <div>
+                <a href="" class="product-name">Modern Shell Chair</a>
+                <span class="product-price">$208.00</span>
+              </div>
+              <div class="product-loadMore">
+                <a href="">Show more</a>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="product-item">
+            <div class="product-top">
+              <a href="" class="product-thumb">
+                <img
+                  src="./public/img/product-canvas-basket-2.jpg"
+                  alt="anh1"
+                />
+                <img src="./public/img/product-canvas-basket.jpg" alt="anh1" />
+              </a>
+            </div>
+            <div class="product-info">
+              <a href=""><i class="fa-regular fa-heart"></i></a>
+              <div>
+                <a href="" class="product-name">Modern Shell Chair</a>
+                <span class="product-price">$208.00</span>
+              </div>
+              <div class="product-loadMore">
+                <a href="">Show more</a>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="product-item">
+            <div class="product-top">
+              <a href="" class="product-thumb">
+                <img
+                  src="./public/img/product-amber-body-lotion-2.jpg"
+                  alt="anh1"
+                />
+                <img
+                  src="./public/img/product-amber-body-lotion.jpg"
+                  alt="anh1"
+                />
+              </a>
+            </div>
+            <div class="product-info">
+              <a href=""><i class="fa-regular fa-heart"></i></a>
+              <div>
+                <a href="" class="product-name">Modern Shell Chair</a>
+                <span class="product-price">$208.00</span>
+              </div>
+              <div class="product-loadMore">
+                <a href="">Show more</a>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="product-item">
+            <div class="product-top">
+              <a href="" class="product-thumb">
+                <img
+                  src="./public/img/product-havana-sunglasses-2.jpg"
+                  alt="anh1"
+                />
+                <img
+                  src="./public/img/product-havana-sunglasses.jpg"
+                  alt="anh1"
+                />
+              </a>
+            </div>
+            <div class="product-info">
+              <a href=""><i class="fa-regular fa-heart"></i></a>
+              <div>
+                <a href="" class="product-name">Modern Shell Chair</a>
+                <span class="product-price">$208.00</span>
+              </div>
+              <div class="product-loadMore">
+                <a href="">Show more</a>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="product-item">
+            <div class="product-top">
+              <a href="" class="product-thumb">
+                <img
+                  src="./public/img/product-henry-backpack-2.jpg"
+                  alt="anh1"
+                />
+                <img src="./public/img/product-henry-backpack.jpg" alt="anh1" />
+              </a>
+            </div>
+            <div class="product-info">
+              <a href=""><i class="fa-regular fa-heart"></i></a>
+              <div>
+                <a href="" class="product-name">Modern Shell Chair</a>
+                <span class="product-price">$208.00</span>
+              </div>
+              <div class="product-loadMore">
+                <a href="">Show more</a>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="product-item">
+            <div class="product-top">
+              <a href="" class="product-thumb">
+                <img
+                  src="./public/img/product-striped-canvas-bag-2.jpg"
+                  alt="anh1"
+                />
+                <img
+                  src="./public/img/product-striped-canvas-bag.jpg"
+                  alt="anh1"
+                />
+              </a>
+            </div>
+            <div class="product-info">
+              <a href=""><i class="fa-regular fa-heart"></i></a>
+              <div>
+                <a href="" class="product-name">Modern Shell Chair</a>
+                <span class="product-price">$208.00</span>
+              </div>
+              <div class="product-loadMore">
+                <a href="">Show more</a>
+              </div>
+            </div>
+          </div>
+        </li>
+
+        <li>
+          <div class="product-item">
+            <div class="product-top">
+              <a href="" class="product-thumb">
+                <img
+                  src="./public/img/product-jersey-backpack-2.jpg"
+                  alt="anh1"
+                />
+                <img
+                  src="./public/img/product-jersey-backpack.jpg"
+                  alt="anh1"
+                />
+              </a>
+            </div>
+            <div class="product-info">
+              <a href=""><i class="fa-regular fa-heart"></i></a>
+              <div>
+                <a href="" class="product-name">Modern Shell Chair</a>
+                <span class="product-price">$208.00</span>
+              </div>
+              <div class="product-loadMore">
+                <a href="">Show more</a>
+              </div>
+            </div>
+          </div>
+        </li>
+
+        <li>
+          <div class="product-item">
+            <div class="product-top">
+              <a href="" class="product-thumb">
+                <img
+                  src="./public/img/product-round-tray-table-2.jpg"
+                  alt="anh1"
+                />
+                <img
+                  src="./public/img/product-round-tray-table.jpg"
+                  alt="anh1"
+                />
+              </a>
+            </div>
+            <div class="product-info">
+              <a href=""><i class="fa-regular fa-heart"></i></a>
+              <div>
+                <a href="" class="product-name">Modern Shell Chair</a>
+                <span class="product-price">$208.00</span>
+              </div>
+              <div class="product-loadMore">
+                <a href="">Show more</a>
+              </div>
+            </div>
+          </div>
+        </li>
+
+        <li>
+          <div class="product-item">
+            <div class="product-top">
+              <a href="" class="product-thumb">
+                <img
+                  src="./public/img/product-ceramic-watch-2.jpg"
+                  alt="anh1"
+                />
+                <img src="./public/img/product-ceramic-watch.jpg" alt="anh1" />
+              </a>
+            </div>
+            <div class="product-info">
+              <a href=""><i class="fa-regular fa-heart"></i></a>
+              <div>
+                <a href="" class="product-name">Modern Shell Chair</a>
+                <span class="product-price">$208.00</span>
+              </div>
+              <div class="product-loadMore">
+                <a href="">Show more</a>
+              </div>
+            </div>
+          </div>
+        </li>
+
+        <li>
+          <div class="product-item">
+            <div class="product-top">
+              <a href="" class="product-thumb">
+                <img
+                  src="./public/img/product-floral-scented-sachet-2.jpg"
+                  alt="anh1"
+                />
+                <img
+                  src="./public/img/product-floral-scented-sachet.jpg"
+                  alt="anh1"
+                />
+              </a>
+            </div>
+            <div class="product-info">
+              <a href=""><i class="fa-regular fa-heart"></i></a>
+              <div>
+                <a href="" class="product-name">Modern Shell Chair</a>
+                <span class="product-price">$208.00</span>
+              </div>
+              <div class="product-loadMore">
+                <a href="">Show more</a>
+              </div>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </div>
+
+    <!-- load more -->
+    <div class="load-more">
+      <a href="">Load More</a>
+    </div>
+
+    <footer class="footer">
+      <div class="footer_content">
+        <ul class="footer_list">
+          <li class="footer_list_first">
+            <a href="">About Us</a>
+          </li>
+          <li>
+            <a href="">Blog</a>
+          </li>
+          <li>
+            <a href="">FAQs</a>
+          </li>
+          <li>
+            <a href="">Order Tracking</a>
+          </li>
+          <li>
+            <a href="">Contact</a>
+          </li>
+          <li class="footer_list_final">&copy; By <a href="">NordicMade</a></li>
+        </ul>
+        <ul class="footer_icon">
+          <li>
+            <a
+              href="https://wpgoat.buzz/savoy-2-8-8-minimalist-ajax-woocommerce-theme/?fbclid=IwAR1JWEfqDfuuF-ax-ucVmqa3uEK67kJ53V7VJL9MgNquQLxvIqJAT7yBLYc#"
+              ><i class="fa-brands fa-facebook"></i
+            ></a>
+          </li>
+          <li>
+            <a href=""><i class="fa-brands fa-instagram"></i></a>
+          </li>
+          <li>
+            <a href=""><i class="fa-brands fa-x-twitter"></i></a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+
+    <div class="carts">
+      <div class="cart">
+        <ul class="cart-list">
+          <li>
+            <a href="" class="close">Close</a>
+          </li>
+          <li class="no-cart">
+            <div class="no-product-cart">
+              <i class="fa-solid fa-xmark"></i>
+            </div>
+            <p>No products in the cart.</p>
+          </li>
+          <li>
+            <a href="/">Continue shopping</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <script src="./Sign_In/signIn.js"></script>
+    <script src="./JS/main.js"></script>
+  </body>
+</html>
+=======
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Savoy - Minimalist AJAX WooCommerce</title>
     <link rel="stylesheet" href="./public/CSS/main.css" />
     <link rel="stylesheet" href="./public/CSS/reset.css" />
     <link
